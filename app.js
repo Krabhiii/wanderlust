@@ -11,7 +11,7 @@ const Joi = require('joi');
 const methodoverride = require("method-override");
 const session = require("express-session");
 const flash = require("connect-flash");
-const MongoStore = require('connect-mongo');
+
 const listings = require("./routes/listing.js");
 const reviews = require("./routes/review.js");
 const expresserror = require("./util/expresserror.js");
