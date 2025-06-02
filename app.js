@@ -1,5 +1,5 @@
 const MongoStore = require("connect-mongo");
-{if(process.env.NODE_ENV != "production"){
+if(process.env.NODE_ENV != "production"){
 require("dotenv").config();
 }
 const express = require("express");
@@ -77,6 +77,10 @@ app.use((req, res, next) => {
     res.locals.curruser = req.user;
     next();
 });
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 // Use routes
 app.use("/",users);
 app.use("/listings", listings);
@@ -93,6 +97,7 @@ app.use((err, req, res, next) => {
 });
 
 // Start server
-app.listen(3000, () => {
-    console.log("app is listening ");
-});}
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`app is listening on port ${port}`);
+});
