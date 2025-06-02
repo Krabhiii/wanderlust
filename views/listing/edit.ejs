@@ -1,0 +1,24 @@
+<% layout("/layouts/boilerplate") %>
+<body class="edit_body">
+    <!-- Navbar is included in the layout -->
+    <main>
+        <h3>Edit Your Listing</h3>
+        <div class="edit_div">
+            <form method="post" action="/listings/<%= foundlisting._id %>?_method=PUT" enctype="multipart/form-data">
+                <input name="listing[title]" value="<%= foundlisting.title %>" placeholder="Title" required type="text">
+                <textarea name="listing[description]" value="<%= foundlisting.description %>" placeholder="Description" required ></textarea>
+                <div class="form-group">
+                <label>Current Image:</label><br>
+                <img src="<%= foundlisting.image.url ? foundlisting.image.url : foundlisting.image %>" alt="Current Image" style="max-width:200px;">
+            </div>
+                <label for="image">Change Image:</label>
+                <input type="file" id="image" name="listing[image]" class="inp" accept="image/*">
+                <input name="listing[price]" value="<%= foundlisting.price %>" placeholder="Price" required>
+                <input name="listing[location]" value="<%= foundlisting.location %>" placeholder="Location" required>
+                <input name="listing[country]" value="<%= foundlisting.country %>" placeholder="Country" required>
+                <button class="edit_btn">Edit</button>
+            </form>
+        </div>
+    </main>
+    <!-- Footer is included in the layout -->
+</body>

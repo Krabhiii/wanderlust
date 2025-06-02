@@ -1,0 +1,17 @@
+<% if(typeof success !== "undefined" && success.length > 0) { %>
+    <% success.forEach(msg => { %>
+        <div class="flash-success" id="flash-success">
+            <span class="flash-close" onclick="this.parentElement.style.display='none';">&times;</span>
+            <%= msg %>
+        </div>
+    <% }) %>
+<% } %>
+
+<% if(typeof error !== "undefined" && error.length > 0) { %>
+    <% error.forEach(msg => { %>
+        <div class="flash-error" id="flash-error">
+            <span class="flash-close" onclick="this.parentElement.style.display='none';">&times;</span>
+            <%= msg %>
+        </div>
+    <% }) %>
+<% } %>

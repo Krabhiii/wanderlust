@@ -1,0 +1,39 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="form-container">
+        <h1>Create a New Listing</h1>
+        <form action="/listings" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="String" id="title" name="listing[title]" class="inp" placeholder="Enter title" required minlength="5">
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="listing[description]" class="inp" placeholder="Enter description" required minlength="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="listing[price]" class="inp" placeholder="Enter price" required >
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="listing[location]" class="inp" placeholder="Enter location" required>
+            </div>
+             <div class="form-group">
+                <label>Current Image:</label><br>
+                <img src="<%= listing.image.url ? listing.image.url : listing.image %>" alt="Current Image" style="max-width:200px;">
+            </div>
+            
+            <div class="form-group">
+                <label for="image">Choose Image:</label>
+                <input type="file" id="image" name="listing[image]" class="inp"required>
+            </div>
+            <div class="form-group">
+                <label for="country">country:</label>
+                <input type="text" id="image" name="listing[country]" class="inp" placeholder="Enter country name" required>
+            </div>
+            <button type="submit" class="btn">Create Listing</button>
+        </form>
+    </div>
+</body>

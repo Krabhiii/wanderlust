@@ -1,0 +1,590 @@
+/* Navbar container */
+nav {
+    background: linear-gradient(180deg, #fff 80%, #f3eaea 100%);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 32px;
+    box-shadow: 0 6px 18px #fdfcfc21, 0 2px 0 #fff inset;
+    border: 2px solid rgb(255, 255, 255); 
+    transition: box-shadow 0.2s, background 0.2s;
+}
+
+/* Navbar list */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display items in a row */
+    justify-content: space-around; /* Space items evenly */
+    align-items: center;
+}
+
+/* Navbar list items */
+nav ul li {
+    display: inline;
+}
+
+/* Navbar links */
+nav ul li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0); /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 10px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+
+.any {
+    height: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #fff 80%, #f3eaea 100%);
+    border: 2px solid rgb(228, 228, 228);
+    box-shadow: 0 4px 12px rgba(244, 244, 244, 0.15), 0 1.5px 0 #fff inset;
+    transition: box-shadow 0.2s, background 0.2s;
+}
+.any:hover {
+    box-shadow: 0 8px 24px rgba(198, 196, 196, 0.22), 0 2px 0 #fff inset;
+    background: linear-gradient(180deg, #fff 60%, #fbeaea 100%);
+}
+.logo{
+    height: 30px;
+    width: 28px;
+    background-image: url(957-9571167_airbnb-png.png);
+    background-size: contain;
+}
+/* footer styling */
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-brands{
+margin-left: 12px;
+}
+.main{
+height: 150px;
+text-align: center;
+background-color: #e0dede;
+color: black;
+margin-top: 20px;
+padding-top: 10px;
+}
+.last{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.last p{
+    margin-left: 15px;
+    text-decoration: none;
+}
+.last a{
+    text-decoration: none;
+    color: black;
+}
+/* Card container styling */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual card styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures content stays inside the card */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.card-image {
+    width: 100%; /* Make the image span the full width of the card */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Card details styling */
+.card-details {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-details h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Button styling */
+.card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #cd3f3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.25s ease;
+}
+
+.card .btn:hover {
+    background-color: #d93b27;
+}
+/*ADD new listing style page*/
+/* Form container styling */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Input and textarea styling */
+.inp {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.inp:focus {
+    border-color: #d8cece;
+    outline: none;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ea0b0b;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #900a2b;
+}
+/* edit page styling*/
+/* Edit page body styling */
+.edit_body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack navbar, main content, and footer vertically */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+
+
+/* Main content area */
+main {
+    flex-grow: 1; /* Allow main content to grow and take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+}
+
+/* Edit form container */
+.edit_div {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Input and textarea styling */
+.edit_div input,
+.edit_div textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.edit_div textarea {
+    resize: none; /* Prevent resizing */
+    height: 80px;
+}
+
+.edit_div input:focus,
+.edit_div textarea:focus {
+    border-color: #6b6363;
+    outline: none;
+}
+
+/* Button styling */
+.edit_div .edit_btn {
+    text-align: center;
+    width: 30%;
+    padding: 10px 15px;
+    background-color: #ed5454;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit_div .edit_btn:hover {
+    background-color: #ca2424;
+}
+
+
+
+/* Show page container */
+.show-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.image-container {
+   max-width:  100%;
+   text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Listing image styling */
+.listing-image {
+    width: 90%;
+    max-height: 320px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Title styling */
+.show-container h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Paragraph styling */
+.show-container p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 1em;
+}
+
+/* Edit and Delete buttons */
+.show-container a,
+.show-container button {
+    display: inline-block;
+    width: 25%;
+   
+    padding: 2px 2px;
+    background-color: #d44f4f;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-container a:hover,
+.show-container button:hover {
+    background-color: #d44f4f;
+}
+
+/* Delete button specific styling */
+/* Review section heading */
+.show-container h4 {
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    color: #444;
+    text-align: center;
+}
+
+/* Review form styling */
+.review-form {
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.rating-con,
+.comment-con {
+    margin-bottom: 15px;
+}
+
+.rating-con label,
+.comment-con label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.rating-con input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+    accent-color: #4caf50;
+}
+
+.comment-con textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 1em;
+    min-height: 80px;
+    box-sizing: border-box;
+}.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.review-card {
+    width: 48%;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 0;
+    padding: 14px 18px 10px 18px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    text-align: left;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+}
+
+.review-card .deletebtn {
+    background: #0b0a0a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 14px;
+    font-size: 0.98em;
+    cursor: pointer;
+    margin-top: 8px;
+    align-self: flex-end;
+    transition: background 0.2s;
+}
+
+.review-card .deletebtn:hover {
+    background: #0f0f0f;
+}
+
+.review-comment {
+    color: #2d3a4a;
+    font-size: 1.08em;
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+    word-break: break-word;
+}
+
+.review-rating {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+    font-size: 2em;
+    gap: 0.1em;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star-rating input[type="radio"]:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ff9800;
+}
+/*flash message styling */
+.flash-success {
+    position: relative; /* Add this! */
+    background: #e6ffe6;
+    color: #207520;
+    border: 1px solid #b2e6b2;
+    border-radius: 5px;
+    padding: 10px 18px;
+    margin: 18px auto 24px auto;
+    max-width: 400px;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.flash-close {
+    position: absolute;    /* Change from relative to absolute */
+    top: 6px;
+    right: 12px;
+    color: #207520;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    transition: color 0.2s;
+}
+
+.flash-error {
+    position: relative;
+    background: #ffe6e6;
+    color: #a94442;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px 18px;
+    margin: 18px auto 24px auto;
+    max-width: 400px;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.flash-close {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    color: #a94442;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    transition: color 0.2s;
+}
+
+.flash-close:hover {
+    color: #d44f4f;
+}
+
+
+/* sign up page styling*/
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(220,53,69,0.10);
+    border: 1.5px solid #f8d7da;
+    padding: 32px 28px 22px 28px;
+}
+
+.signup-title {
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.signup-group {
+    margin-bottom: 18px;
+}
+
+.signup-group label {
+    color: #060505;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.signup-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #f5c6cb;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #fff;
+    color: #333;
+    transition: border 0.2s;
+}
+
+.signup-group input:focus {
+    border: 1.5px solid #f0b0b6;
+    outline: none;
+}
+
+.signup-btn {
+    width: 100%;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 11px;
+    font-size: 1.08em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.signup-btn:hover {
+    background: #e43d4e;
+}
